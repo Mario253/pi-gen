@@ -2,14 +2,14 @@
 #include <iostream>
 using namespace std;
 
-char * pi = "14159265358979323846264";
+char * pi = "3.14159265358979323846264";
 
 int main() {
     int places;
     cout << "Enter a number from 1 to 23, and I will print out pi to that decimal place (not rounded): ";
     cin >> places;
-    cout << "3.";
-    for (int i = 0; i < places; i++) {
+    for (int i = 0; i < places + 2; i++) {
         cout << pi[i];
     }
+    cout << "\n";
 }
